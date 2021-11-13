@@ -14,7 +14,7 @@ class TelaPrincipal:
     def alteracao(self):
         now = datetime.datetime.now()
         
-        self.lblRelogio['text'] = now.strftime('%A, %w %B %Y\n%H:%M:%S')
+        self.lblRelogio['text'] = now.strftime('%A, %d %B %Y\n%H:%M:%S')
 
         self.nossaTela.after(1000, self.alteracao)
 
