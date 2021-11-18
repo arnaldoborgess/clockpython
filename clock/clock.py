@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 import tkinter as tk
-
 import datetime
+import locale
+
+locale.setlocale(locale.LC_ALL, 'pt_BR.utf8')
 
 class TelaPrincipal:
     def __init__(self, master):
