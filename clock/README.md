@@ -1,6 +1,6 @@
 # Clockpython - Criando um super relógio em python
 
-## A intenção desse projeto é melhorar o aprendizado e utilizar na prática a linguagem de programação python de uma forma criativa e divertida, enquanto estuda a linguagem mais a fundo se desafiando e aprendendo.
+## A intenção desse projeto é melhorar o aprendizado e utilizar na prática a linguagem de programação python de uma forma criativa e divertida, enquanto estuda a linguagem mais a fundo se desafiando e aprendendo
 
 ## Código Linha a Linha
 
