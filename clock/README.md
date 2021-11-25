@@ -1,14 +1,14 @@
 # Clockpython - Criando um super relógio em python
 
-## A intenção desse projeto é melhorar o aprendizado e utilizar na prática a linguagem de programação python de uma forma criativa e divertida, enquanto estuda a linguagem mais a fundo e se desafiando e aprendendo
+## A intenção desse projeto é melhorar o aprendizado e utilizar na prática a linguagem de programação python de uma forma criativa e divertida, enquanto estuda a linguagem mais a fundo se desafiando e aprendendo.
 
-## _Código Linha a Linha_
+## Código Linha a Linha
 
 Projeto feito em python utilizando um tkinter interface (entre outros que vou colocar aqui)
 
 A ideia que se baseia em criar inicialmente uma aplicação de relógio depois um alarme na linguagem python que vai tocar e falar a hora de tempos em tempos de acordo com o que é programado pelo usuário. Fazer tudo passo a passo futuramente minha ideia é incrementar um mapa ou relógio para dizer a localização e a previsão do tempo também.
 
-## _Início do Projeto_
+## Início do Projeto
 
 ### Criação do Relógio - Código Linha a Linha
 
