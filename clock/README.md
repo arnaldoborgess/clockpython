@@ -86,6 +86,6 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 >Referências:
 
-- Interface Python para Tcl/Tk — documentação Python 3.9.9 - docs.python.org - tkinter
-- Python - Rótulo Tkinter - tutorialspoint.com - (tutorialspoint.com)
-- datetime — Tipos básicos de data e hora. - <https://docs.python.org/pt-br/3/library/datetime.html#strftime-strptime-behavior>
+* Interface Python para Tcl/Tk — documentação Python 3.9.9 - docs.python.org - tkinter
+* Python - Rótulo Tkinter - tutorialspoint.com - (tutorialspoint.com)
+* datetime — Tipos básicos de data e hora. - <https://docs.python.org/pt-br/3/library/datetime.html#strftime-strptime-behavior>
