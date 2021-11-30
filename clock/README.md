@@ -80,7 +80,7 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 `TelaPrincipal(janela_raiz)`
 
-22.Bloqueia qualquer código até que a janela seja fechada
+22.Executa a janela em loop.
 
 `janela_raiz.mainloop()`
 
