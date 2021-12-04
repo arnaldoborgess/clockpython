@@ -1,8 +1,8 @@
 from time import localtime 
 from pygame import mixer
 
-hora = int(input('Coloque a Hora: ')) # entrar com o valor da hora
-minuto = int(input('Coloque o Minuto: ')) # entrar com o valor do minuto
+hora = int(input('Coloque a Hora: '))
+minuto = int(input('Coloque o Minuto: '))
 
 while True:
     if localtime().tm_hour == hora and localtime().tm_min == minuto:
