@@ -1,6 +1,5 @@
-from time import localtime #  permite que o código leia a hora e o minuto do computador.
-from pygame import mixer # permite que o código leia arquivos de mídia
-
+from time import localtime 
+from pygame import mixer
 
 hora = int(input('Coloque a Hora: ')) # entrar com o valor da hora
 minuto = int(input('Coloque o Minuto: ')) # entrar com o valor do minuto

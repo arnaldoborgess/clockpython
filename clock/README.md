@@ -10,7 +10,7 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 ## Início do Projeto
 
-### Criação do Relógio - Código Linha a Linha
+### Criação do Relógio - Código Linha a Linha Relógio
 
 1.importa o pacote tkinter que é uma interface visual em python.
 
@@ -83,6 +83,52 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 22.Executa a janela em loop.
 
 `janela_raiz.mainloop()`
+
+## Criação do Alarme - Código linha a linha
+
+1.Permite que o código leia a hora e o minuto do computador.
+
+`from time import localtime`
+
+2.Permite que o código leia arquivos de mídia
+
+`from pygame import mixer`
+
+4.Pedi ao usuário entrar com o valor da hora.
+
+`hora = int(input('Coloque a Hora: '))`
+
+5.Pede para o usuário entrar com o valor do minuto.
+
+`minuto = int(input('Coloque o Minuto: '))`
+
+7.Inicia o loop.
+
+`while True:`
+
+8.Aqui diz se local for igual a hora e local for igual a minuto.
+
+`if localtime().tm_hour == hora and localtime().tm_min == minuto:`
+
+9.Imprima na tela 'HORA DE ACORDAR'.
+
+`print('HORA DE ACORDAR')`
+
+10.Inicia o módulo de carregamento de mídia.
+
+`mixer.init()`
+
+11.Carrega a mídia np endereço especificado.
+
+`mixer.music.load("endereço do arquivo")`
+
+12.Inicia a mídia.
+
+`mixer.music.play()`
+
+13.Finaliza a interação e o script continua a sua execução.
+
+`break`
 
 >Referências:
 
