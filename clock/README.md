@@ -12,15 +12,15 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 ### Criação do Relógio - Código Linha a Linha Relógio
 
-1.importa o pacote tkinter que é uma interface visual em python.
+1.Importa o pacote tkinter que é uma interface visual em python.
 
 `import tkinter as tk`
 
-2.importa o módulo datatime, ele fornece módulo como classes para manipulação de dados e horas.
+2.Importa o módulo datatime, ele fornece módulo como classes para manipulação de dados e horas.
 
 `import datetime`
 
-3.importando o módulo locale que acessa o banco de dados e funcionalidade locais POSIX(é uma família de normas definidas pelo IEEE(Instituto de Engenheiros Elétricos e Eletrônicos) para manutenção de compatibilidade entre sistemas operacionais em PT-PT).
+3.Importando o módulo locale que acessa o banco de dados e funcionalidade locais POSIX(é uma família de normas definidas pelo IEEE(Instituto de Engenheiros Elétricos e Eletrônicos) para manutenção de compatibilidade entre sistemas operacionais em PT-PT).
 
 `import locale`
 
@@ -56,7 +56,7 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 `self.hora()`
 
-15.Delara a função hora.
+15.Declara a função hora.
 
 `self.hora()`
 
@@ -94,7 +94,7 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 `from pygame import mixer`
 
-4.Pedi ao usuário entrar com o valor da hora.
+4.Pede ao usuário entrar com o valor da hora.
 
 `hora = int(input('Coloque a Hora: '))`
 
@@ -118,7 +118,7 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 
 `mixer.init()`
 
-11.Carrega a mídia np endereço especificado.
+11.Carrega a mídia com endereço especificado.
 
 `mixer.music.load("endereço do arquivo")`
 
