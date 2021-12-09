@@ -8,8 +8,8 @@ class TelaPrincipal:
     def __init__(self, master):
         self.tela = master
         self.relogio_digital = tk.Label(
-        self.tela, font=('Arial', 26), fg='green', bg = 'Black')
-        self.relogio_digital.pack(pady=30, padx=30)
+        self.tela, font=('LCDMono2', 26), fg='white', bg = 'black')
+        self.relogio_digital.pack(pady=0, padx=0)
         self.hora()
 
     def hora(self):
@@ -19,4 +19,4 @@ class TelaPrincipal:
 
 janela_raiz = tk.Tk()
 TelaPrincipal(janela_raiz)
-janela_raiz.mainloop() # bloqueia qualquer código até que a janela seja fechada
+janela_raiz.mainloop() 
