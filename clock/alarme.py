@@ -11,4 +11,5 @@ def alarm():
             mixer.init()
             mixer.music.load("endereço do arquivo")
             mixer.music.play()
-        break
+            break
+alarm()        
