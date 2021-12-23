@@ -1,7 +1,7 @@
 import pygame
 
 pygame.init()
-pygame.mixer.music.load('alrme.wav')
+pygame.mixer.music.load('alarme.wav')
 pygame.mixer.music.play()
 
 #import simpleaudio as sa
