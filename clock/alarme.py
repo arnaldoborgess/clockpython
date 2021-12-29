@@ -9,7 +9,7 @@ def alarm():
         if localtime().tm_hour == hora and localtime().tm_min == minuto:
             print('HORA DE ACORDAR')
             mixer.init()
-            mixer.music.load("endereço do arquivo")
+            mixer.music.load("play.wav")
             mixer.music.play()
             break
 alarm()        
