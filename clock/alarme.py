@@ -10,7 +10,7 @@ def alarm():
             print('HORA DE ACORDAR')
             file = 'play.mp3'
             mixer.init()
-            mixer.music.load("play.wav")
+            mixer.music.load("0002075.mp3")
             mixer.music.play()
             break
         
