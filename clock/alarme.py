@@ -10,8 +10,8 @@ def alarm():
             print('HORA DE ACORDAR')
             file = 'play.mp3'
             mixer.init()
-            mixer.music.load("0002075.mp3")
-            mixer.music.play()
+            mixer.music.load("/home/arnaldo/Documentos/clockpython/clock/0002075.mp3")
+            mixer.music.play(loops=0-1, start=0.0, fade_ms=0)
             break
         
 alarm()        
