@@ -175,7 +175,7 @@ Execute `sudo locale-gen` para gerar as atualizações habilitadas.
 
 Script pode ser usado em um pipeline de CI/CD para automatizar a instalação de dependências e configuração de localizações em um ambiente Ubuntu. 
 
-`
+```
 name: Instalação de Dependências
 
 on:
@@ -228,7 +228,7 @@ jobs:
       - name: Verificar localizações disponíveis
         run: locale -a
 
-`
+```
 
 
 
