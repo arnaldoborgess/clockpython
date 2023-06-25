@@ -135,3 +135,103 @@ A ideia que se baseia em criar inicialmente uma aplicação de relógio depois u
 * Interface Python para Tcl/Tk — documentação Python 3.9.9 - docs.python.org - tkinter
 * Python - Rótulo Tkinter - tutorialspoint.com - (tutorialspoint.com)
 * datetime — Tipos básicos de data e hora. - <https://docs.python.org/pt-br/3/library/datetime.html#strftime-strptime-behavior>
+
+## Instalar pipenv
+
+Confirmar se pip está instalado. `pip -V`
+
+Instalar o pip. `pip install pipenv`
+
+Instalar o python3-pip. `sudo apt-get install python3-pip`
+ou `sudo apt install python3-venv python3-pip`
+
+## Instalar pacotes necessários
+
+Instalar o modulo ensurepip `sudo apt install python3 ensurepip`
+Instalar modulo tkinter `sudo apt install python3-tk`
+Instalar modulo tkinter no pip `pip3 install tk`
+Intalar modulo pygame `pip3 install pygame`
+
+## Instalar a localização através do gerenciador de pacote `apt`.
+
+Atualizar o sistema. `sudo apt update`
+Instalar o pacote. `sudo apt install locales`
+
+Durante a instalação, você será solicitado a selecionar as localizações que deseja habilitar. Utilize as setas do teclado para navegar e pressione a tecla de espaço para selecionar as localizações desejadas. Por exemplo, você pode escolher "pt_BR.UTF-8 UTF-8" para o português do Brasil. Em seguida, pressione a tecla Enter para prosseguir.
+
+Veja se a localização está na lista. `locale -a`
+
+Para instalar uma nova localização no Ubuntu, você precisa gerar o arquivo de configuração correspondente à localização desejada.
+
+`sudo nano /etc/locale.gen`
+
+Dentro do arquivo de configuração, você encontrará uma lista de localizações disponíveis. Procure a localização desejada (por exemplo, pt_BR.UTF-8 UTF-8) e remova o caractere de comentário "#" no início da linha para habilitá-la e salve o arquivo.
+
+`Ctrl+O`, para salvar em seguida pressione Enter. Em seguida, saia do editor de texto pressionando `Ctrl+X` para fechar.
+
+Execute `sudo locale-gen` para gerar as atualizações habilitadas.
+
+## Script de instalação automatizado.
+
+Script pode ser usado em um pipeline de CI/CD para automatizar a instalação de dependências e configuração de localizações em um ambiente Ubuntu. 
+
+`
+name: Instalação de Dependências
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Verificar versão do pip
+        run: pip -V
+        
+      - name: Instalar pipenv
+        run: pip install pipenv
+        
+      - name: Instalar python3-pip
+        run: sudo apt-get install python3-pip
+        
+      - name: Instalar módulo ensurepip
+        run: sudo apt install python3-venv python3-pip
+        
+      - name: Instalar módulo tkinter
+        run: sudo apt install python3-tk
+        
+      - name: Instalar módulo tkinter com pip
+        run: pip3 install tk
+        
+      - name: Instalar módulo pygame
+        run: pip3 install pygame
+        
+      - name: Atualizar sistema
+        run: sudo apt update
+        
+      - name: Instalar pacote de localização
+        run: sudo apt install locales
+        
+      - name: Editar arquivo de configuração das localizações
+        run: |
+          sudo nano /etc/locale.gen
+          # Remova o caractere de comentário "#" da localização desejada e salve o arquivo
+          # Pressione Ctrl+O, em seguida Enter para salvar
+          # Pressione Ctrl+X para sair do editor
+          
+      - name: Gerar localizações habilitadas
+        run: sudo locale-gen
+        
+      - name: Verificar localizações disponíveis
+        run: locale -a
+
+`
+
+
+
+
+
+
